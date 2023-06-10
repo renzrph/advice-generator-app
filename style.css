@@ -1,0 +1,78 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 500px;
+  min-width: 400px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 24%);
+  position: relative; /* Add position relative to the container */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between; /* Add space between items vertically */
+  box-shadow: 0 7px 20px -10px rgba(150, 170, 180, 0.5);
+}
+
+.advice-number {
+  margin: 1rem auto 0 auto;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.2rem;
+}
+
+.advice {
+  margin: 1rem auto;
+  width: 70%;
+  color: hsl(193, 38%, 86%);
+}
+
+.divider-image {
+  width: 70%;
+  margin: 1.2rem auto;
+  margin-bottom: 3.5rem;
+}
+
+.dice-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 auto;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute; /* Add absolute positioning to the button */
+  bottom: -25px; /* Adjust the value to overlap the bottom border */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Move the button to the center */
+}
+
+.dice-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px hsl(150, 100%, 66%); /* Add glow effect */
+}
+
+/* Mobile View */
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 35%;
+    margin: 0 1rem;
+    max-width: 450px;
+    min-width: 350px;
+  }
+}
